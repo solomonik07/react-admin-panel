@@ -1,0 +1,163 @@
+.container {
+  min-height: 100vh;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.header {
+  background-color: white;
+  padding: 0 30px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.col1 {
+  min-width: 20%;
+}
+
+.title {
+  margin: 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.searchContainer {
+  width: 60%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  background: #f3f3f3;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  color: #999;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #242edb;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.searchInput::placeholder {
+  color: #999;
+}
+
+.searchHint {
+  margin-left: 12px;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.content {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.contentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentHeader h2 {
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.refreshButton {
+  padding: 10px;
+  border: 1px solid #f3f3f3;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.refreshButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: #f3f3f3;
+}
+
+.refreshIcon {
+  font-size: 1.2rem;
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+/* Анимация для иконки обновления при загрузке */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Останавливаем анимацию когда не загружается */
+.refreshButton:not(:disabled) .refreshIcon {
+  animation: none;
+}
+
+.addButton {
+  padding: 10px 20px;
+  background-color: #242edb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  box-sizing: border-box;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.logoutButton {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.logoutButton:hover {
+  background-color: #5a6268;
+}

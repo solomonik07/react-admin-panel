@@ -1,0 +1,171 @@
+.tableContainer {
+  background-color: white;
+  border-radius: 8px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.headerCell {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #999;
+  border-bottom: 1px solid #e2e2e2;
+  box-sizing: border-box;
+}
+
+.sortable {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sortable:hover {
+  background-color: #e9ecef;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sortIcon {
+  color: #3c538e;
+  font-size: 14px;
+}
+
+.cell {
+  padding: 12px;
+  border-bottom: 1px solid #e2e2e2;
+  color: #212529;
+  box-sizing: border-box;
+}
+
+.row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.row:hover {
+  background-color: #f8f9fa;
+}
+
+.row:last-child .cell {
+  border-bottom: none;
+}
+
+.checkboxLabel {
+  display: block;
+  transform: translate(0, -50%);
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #3c538e;
+}
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translate(0, 5%);
+}
+
+.productThumbnail {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.productTitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+}
+
+.productCategory {
+  font-size: 14px;
+  color: #999;
+  text-transform: capitalize;
+}
+
+.brand {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+  transform: translate(0, -100%);
+}
+
+.sku {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  transform: translate(0, -100%);
+}
+
+.rating {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  transform: translate(0, -100%);
+}
+
+.lowRating {
+  color: #f11010;
+}
+
+.price {
+  font-family: var(--font-secondary) !important;
+  font-weight: 400;
+  display: block;
+  color: #000;
+  transform: translate(0, -100%);
+}
+
+.actionButtons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.iconButton {
+  width: 52px;
+  height: 27px;
+  border-radius: 23px;
+  border: none;
+  background-color: #242edb;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconCircleButton {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
